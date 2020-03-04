@@ -1,0 +1,17 @@
+
+
+body{
+    background-image: url("../../images/robbe/backgroundGIf.gif");
+}
+
+header{
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    color: white;
+}
+
+header > h1{
+    font-size: 3.5rem;
+}
