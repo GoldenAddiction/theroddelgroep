@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #1E1D1D;
+
 }
 
 header{
@@ -10,7 +10,7 @@ header{
     background-repeat: no-repeat;
     background-size: 100%;
     height: 200px;
-    color: white;
+    color: black;
 
     display: flex;
     justify-content: space-around;
@@ -26,6 +26,7 @@ header{
 
 #leMonke > marquee{
     width: 75%;
+    color: black;
 }
 
 #poopy{
@@ -35,4 +36,51 @@ header{
     background-position-x: -87px;
     width: 100%;
     height: 70px;
+}
+
+#container div {
+
+    border:  2px solid white;
+    background-color: red;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#container .div1{
+    width: 120px;
+    height: 120px;
+}
+#container .div2{
+    width: 100px;
+    height: 150px;
+}
+#container .div3{
+    width: 160px;
+    height: 90px;
+}
+
+#container .div4{
+    width: 130px;
+    height: 130px;
+}
+
+#firstThing{
+    width: 15%;
+}
+
+#item1{
+    background-image: url("../javascript/robbe/theunknown.png");
+    height: 175px;
+    width: 236px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+}
+
+#item1:hover{
+    background-image: url("../javascript/robbe/theunknown3.png");
+}
+
+#Overview{
+    margin-left: 20px;
 }
