@@ -1,7 +1,7 @@
 /* main */
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 header{
-    background: url("../../images/maarten/header.png");
+    background: url("../../../images/maarten/header.png");
     height:100vh;
     background-repeat: no-repeat;
     background-size:cover;
