@@ -1,3 +1,9 @@
-body {
-    background-color: hotpink;
+header{
+    height:100vh;
+    background: url("../../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    font-size:20rem;
 }
