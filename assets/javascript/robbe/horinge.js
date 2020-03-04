@@ -3,13 +3,22 @@
 
 document.addEventListener("DOMContentLoaded", init);
 
-function init(){
+function init() {}
+
+
+
+
+function startSound(){
+
+
     let source = "../assets/javascript/robbe/stinky.mp3";
     let volume = 100;
     let loop = 1;
 
-   let snd =  new Sound(source,volume,loop);
-    snd.start();}
+    let snd =  new Sound(source,volume,loop);
+    snd.start();
+
+}
 
 
 function Sound(source, volume, loop)
