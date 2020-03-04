@@ -65,7 +65,9 @@ header{
 }
 
 #firstThing{
-    width: 15%;
+    width: 56%;
+    display: inline-block;
+    background-color: grey;
 }
 
 #item1{
@@ -77,10 +79,39 @@ header{
 
 }
 
+#cap{
+    padding: 5px;
+}
+
 #item1:hover{
     background-image: url("../javascript/robbe/theunknown3.png");
 }
 
 #Overview{
     margin-left: 20px;
+    display: inline-block;
+}
+
+
+#game{
+    background-color: black;
+    display: inline-block;
+}
+
+#gameView{
+    display: inline-block;
+}
+
+#controlList{
+    display: inline-block;
+    align-items: center;
+}
+
+#gameInfo{
+    display: inline-block;
+}
+
+#gameInfo h1{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
