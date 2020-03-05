@@ -20,13 +20,13 @@
     <h1>De Roddelgroep</h1>
 </header>-->
 <nav>
-    <ul>
-        <li><a href="subpages/anton.html">Anton</a></li>
-        <li><a href="subpages/maarten.html">Maarten</a></li>
-        <li><a href="subpages/florian.html">Florian</a></li>
-        <li><a href="subpages/robbe.html">Robbe</a></li>
-        <li><a href="subpages/jeffrey.html">Jeffrey</a></li>
-        <li><a href="subpages/stef.html">Stef</a></li>
+    <ul class="persons">
+        <li class="person"><a href="subpages/anton.html">Anton</a></li>
+        <li class="person"><a href="subpages/maarten.html">Maarten</a></li>
+        <li class="person"><a href="subpages/florian.html">Florian</a></li>
+        <li class="person"><a href="subpages/robbe.html">Robbe</a></li>
+        <li class="person"><a href="subpages/jeffrey.html">Jeffrey</a></li>
+        <li class="person"><a href="subpages/stef.html">Stef</a></li>
     </ul>
 </nav>
 <main>
@@ -38,6 +38,12 @@
             <input type="submit" name="send" value="Controleren" id="letsgo">
         </form>
     </div>
+
+    <aside id="comments">
+        <h3>Iets te melden? <span>(pagina herladen om comment te zien, someone fix it pls)</span></h3>
+        <form id="commenting" action="#" method="post">Naam: <input name="naam" id="naam" type="text">Comment: <input id="reactie" name="reactie" type="text"><input type="submit" value="verzenden"></form>
+        <ul id="list"></ul>
+    </aside>
     <!--<h1> Wilt u onze fanpage joinen Ga dan naar Robbe Verscheure</h1>-->
 </main>
    <!-- <h1> The Quotes</h1>
