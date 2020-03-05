@@ -16,3 +16,21 @@ main{
     margin: 0 10vw;
     background: rgba(0,0,0,0.6);
 }
+main article{
+    height: 40vh;
+}
+main article img{
+    position: absolute;
+    height:50%;
+    animation-name: fromLeft;
+    animation-duration: 1.5s;
+}
+
+@keyframes fromLeft {
+    0% {left: -100%}
+    68%{transform: rotate(5deg)}
+    76%{transform: rotate(-10deg)}
+    84%{transform: rotate(0deg)}
+    92% {transform: rotate(10deg)}
+    100% {left: 10vw}
+}
