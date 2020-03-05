@@ -279,3 +279,31 @@ header {
 #Overview > h1{
     font-size: 2.3rem;
 }
+
+#option1{
+    background-image: url("../../images/robbe/header.gif");
+    width: 250px;
+}
+
+#activityOverview  a {
+    height: 50px;
+
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    line-height: 50px;
+
+}
+
+
+
+.option2{
+    background-image: url("../../images/robbe/neon.gif");
+    width: 150px;
+}
+
+.option3{
+    background-image: url("../../images/robbe/space.gif");
+    width: 150px;
+}
