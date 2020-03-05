@@ -1,9 +1,38 @@
 header{
     height:100vh;
-    background: url("../../images/header.jpg");
-    background-repeat: no-repeat;
+    background: url("../../images/header.jpg") no-repeat;
     background-size:cover;
 }
 h1{
     font-size:20rem;
+}
+#haha{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+}
+#ww{
+    color: white;
+    height: 50vh;
+    width: 50vw;
+    margin: 25vh 25vw;
+    background-color: black;
+}
+#ingelogdbluven h2{
+    cursor: pointer;
+}
+#ingelogdbluven h2:hover{
+    text-decoration: underline;
+}
+/*GENERAL CLASSES*/
+.noscroll{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hidden{
+    display: none !important;
 }
