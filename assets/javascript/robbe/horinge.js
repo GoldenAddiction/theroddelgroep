@@ -8,7 +8,7 @@ function init() {}
 
 
 
-function startSound(){
+function startSoundLeMonke(){
 
 
     let source = "../assets/javascript/robbe/stinky.mp3";
