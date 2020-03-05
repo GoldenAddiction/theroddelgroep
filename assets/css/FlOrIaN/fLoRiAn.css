@@ -5,7 +5,8 @@ body{
     background: url("../../../images/FlOrIaN/NYAN.png") fixed;
 }
 header{
-    background: url("../../../images/FlOrIaN/NYANRAINBOWHOZ.gif");
+    background: url("../../../images/FlOrIaN/NYANRAINBOWHOZ.gif") fixed;
+    background-size: 50%;
     height: 10vh;
 }
 main{
