@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init() {
     checkIngelogdBluven();
-    document.querySelector("#letsgo").addEventListener("click", letsgo)
+    document.querySelector("#letsgo").addEventListener("click", letsgo);
+    loadComments();
+    document.querySelector("#commenting").addEventListener("submit", postComment);
 }
 
 function checkIngelogdBluven() {
@@ -57,4 +59,50 @@ function letsgo(e) {
     }
     document.querySelector("#superSterkWachtwoord").value = "";
     checkIngelogdBluven();
+}
+
+function loadComments() {
+    fetch("https://sheet.best/api/sheets/52bd4abd-455c-4ddc-96a6-5c355d7a1f73").
+    then((response) => {
+        return response.json();})
+        .then((data) => {
+            transformComments(data);
+        })
+    }
+
+function transformComments(data){
+    let html = document.querySelector("#list").innerHTML;
+    let lst = "";
+ 
+
+    for (let i=data.length-1; i>=0; i--){
+
+        lst += `<li class="message">${data[i].naam}: ${data[i].reactie}</li>`
+
+
+    }
+
+    document.querySelector("#list").innerHTML = lst;
+}
+
+function postComment(e){
+    e.preventDefault();
+    let name = document.querySelector("#naam").value;
+    let reactie = document.querySelector("#reactie").value;
+
+    console.log(name[0]);
+    if (name[0] !== "<" && reactie[0] !== "<"){
+        let data = {
+            "naam": name,
+            "reactie": reactie
+        };
+    
+    
+        fetch("https://sheet.best/api/sheets/52bd4abd-455c-4ddc-96a6-5c355d7a1f73", {method: 'POST',   headers: {
+            'Content-Type': 'application/json',
+          }, body: JSON.stringify(data)})
+          .then(loadComments());
+    }
+
+
 }
