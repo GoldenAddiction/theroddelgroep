@@ -147,8 +147,8 @@ let possibleEmoji = ["💩", "🤣", "👊🏼"];
 })();
 
 
-//let element = document.querySelector(".door");
-//element.addEventListener("click", toggleDoor);
+let element = document.querySelector(".door");
+element.addEventListener("click", toggleDoor);
 
 function toggleDoor() {
 
