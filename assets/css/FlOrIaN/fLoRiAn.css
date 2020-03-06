@@ -1,0 +1,36 @@
+*{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+body{
+    background: url("../../../images/FlOrIaN/NYAN.png") fixed;
+    background-size: 100%;
+}
+header{
+    background: url("../../../images/FlOrIaN/NYANRAINBOWHOZ.gif") fixed;
+    background-size: 50%;
+    height: 10vh;
+}
+main{
+    width: 80vw;
+    height: 90vh;
+    margin: 0 10vw;
+    background: rgba(0,0,0,0.6);
+}
+main article{
+    height: 40vh;
+}
+main article img{
+    position: absolute;
+    height:50%;
+    animation-name: fromLeft;
+    animation-duration: 1.5s;
+}
+
+@keyframes fromLeft {
+    0% {left: -100%}
+    68%{transform: rotate(5deg)}
+    76%{transform: rotate(-10deg)}
+    84%{transform: rotate(0deg)}
+    92% {transform: rotate(10deg)}
+    100% {left: 10vw}
+}
