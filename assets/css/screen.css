@@ -25,6 +25,20 @@ h1{
     width: 50vw;
     margin: 25vh 25vw;
     background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ww label, #ww input{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#ww label{
+    width: auto;
+}
+#ww input{
+    width: 200px;
 }
 #ingelogdbluven h2{
     cursor: pointer;
