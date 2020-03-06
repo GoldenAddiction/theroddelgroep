@@ -76,7 +76,10 @@ function transformComments(data){
  
 
     for (let i=data.length-1; i>=0; i--){
+
         lst += `<li class="message">${data[i].naam}: ${data[i].reactie}</li>`
+
+
     }
 
     document.querySelector("#list").innerHTML = lst;
@@ -84,17 +87,22 @@ function transformComments(data){
 
 function postComment(e){
     e.preventDefault();
-    console.log("submitted");
     let name = document.querySelector("#naam").value;
     let reactie = document.querySelector("#reactie").value;
-    let data = {
-        "naam": name,
-        "reactie": reactie
-    };
 
-    fetch("https://sheet.best/api/sheets/52bd4abd-455c-4ddc-96a6-5c355d7a1f73", {method: 'POST',   headers: {
-        'Content-Type': 'application/json',
-      }, body: JSON.stringify(data)})
-      .then(loadComments());
+    console.log(name[0]);
+    if (name[0] !== "<" && reactie[0] !== "<"){
+        let data = {
+            "naam": name,
+            "reactie": reactie
+        };
+    
+    
+        fetch("https://sheet.best/api/sheets/52bd4abd-455c-4ddc-96a6-5c355d7a1f73", {method: 'POST',   headers: {
+            'Content-Type': 'application/json',
+          }, body: JSON.stringify(data)})
+          .then(loadComments());
+    }
+
 
 }
