@@ -312,6 +312,12 @@ header {
     padding: 5px;
     line-height: 50px;
     margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#activityOverview a:visited{
+    color:white;
 }
 
 
@@ -334,7 +340,11 @@ header {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+#slideShowDiv img{
+    width: 50%;
 }
 
 .show{
