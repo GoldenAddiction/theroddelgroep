@@ -1,0 +1,129 @@
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    #exit {
+        display: none;
+    }
+
+    #exit-mobile {
+        display: block !important;
+    }
+  }
+
+
+#screen1 {
+    background-color: red;
+}
+
+#s1 {
+    color: whitesmoke;
+}
+
+#s2 {
+    color: black;
+}
+
+#s3 {  
+    color: whitesmoke;
+}
+
+a {
+    color: white;
+    display:inline-block;
+    width: 100%;   
+}
+#screen2 {
+    background-color: whitesmoke;
+}
+
+#screen3 {
+    background-color: black;
+}
+
+#screen4 {
+    background-color: red;
+}
+
+#s4 {
+    color: white;
+}
+
+
+.header {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+
+li {
+    display: inline-block;
+    margin:5px 25px;;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+#exit, #exit-mobile {
+    color: red;
+    font-family: 'anton', sans-serif;
+
+    position: fixed;
+
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+#exit a, #exit-mobile a {
+    color: red;
+    text-decoration: none;
+}
+
+#exit-mobile {
+    display: none
+}
