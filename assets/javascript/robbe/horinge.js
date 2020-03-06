@@ -3,7 +3,14 @@
 
 document.addEventListener("DOMContentLoaded", init);
 
-function init() {}
+function init() {
+
+    let startDateTime = new Date(2017, 5, 3, 17, 56); // YYYY (M-1) D H m s ms (start time and date from DB)
+    let startStamp = startDateTime.getTime();
+    setInterval(updateClock(startDateTime,startStamp), 60000);
+
+
+}
 
 
 
@@ -17,6 +24,9 @@ function startSoundLeMonke(){
 
     let snd =  new Sound(source,volume,loop);
     snd.start();
+
+
+
 
 }
 

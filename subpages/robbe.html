@@ -11,81 +11,94 @@
 
 </head>
 <body>
-<!--<div id="inkom">
-    <div id="backDoor" class="backDoor">
-        <div id="frontDoor" class="door">
-        </div>
-    </div>
-</div>-->
+<!--<div id="inkom">-->
+<!--<div id="backDoor" class="backDoor">-->
+<!--<div id="frontDoor" class="door">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <div id="content" class="">
 
 
-<header>
+    <header>
 
-    <div id="begroeting" class="fade-in">
-        <h1 class="fade-in">Welkom!</h1>
+        <div id="begroeting" class="fade-in">
+            <h1 class="fade-in">Welkom!</h1>
 
-    </div>
+        </div>
 
-    <div id="leMonke" class="fade-in">
-        <h3 id="poopy" onclick="startSoundLeMonke()"></h3>
-        <marquee>Click me!</marquee>
-    </div>
-
-
-</header>
-<main>
-    <div id="container">
-
-    </div>
-
-
-
-
-    <div id="Overview" class="fade-in">
-        <h1>Welkom in mijn man cave! Hier kan je allerlei zotte dingen doen!</h1>
-
-        <div id="activityOverview">
-            <a id="option1">Eentje drinken met Maarten</a>
-            <a class="option2">Slangenspel spelen</a>
-            <a class="option3">Karaoke met Anton</a>
+        <div id="leMonke" class="fade-in">
+            <h3 id="poopy" onclick="startSoundLeMonke()"></h3>
+            <marquee>Click me!</marquee>
         </div>
 
 
-        <!--<div id="firstThing" class="fade-in">
-            <figure>
-                <div id="item1" class="fade-in"></div>
-                <figcaption id="cap" class="fade-in">Hover over Maarten om een shotje te pakken!</figcaption>
-            </figure>
-        </div>-->
+    </header>
+    <main>
+        <div id="container">
 
-
-
-
-    </div>
-
-
-    <!--<div id="gameView" class="fade-in hidden">
-        <h1>SLANGENSPEL</h1>
-        <canvas onclick="playSnake()" width="400" height="400" id="game"></canvas>
-        <div id="gameInfo">
-            <h1>Click on the black box to start!</h1>
-
-            <ul id="controlList">
-                <li>W naar <b>BOVEN</b></li>
-                <li>S naar BENEDEN</li>
-                <li>A naar LINKS</li>
-                <li>D naar RECHTS</li>
-            </ul>
         </div>
 
-    </div>-->
+
+        <div id="Overview" class="fade-in">
+            <h1>Welkom in mijn man cave! Hier kan je allerlei zotte dingen doen!</h1>
+
+            <div id="activityOverview">
+                <a id="option1">Eentje drinken met Maarten</a>
+                <a class="option2">Slangenspel spelen</a>
+                <a class="option3">Ode aan Stradale</a>
+            </div>
 
 
-</main>
-<footer>
+            <h2>Eentje drinken met de Maarten!</h2>
+            <div id="firstThing" class="fade-in contentPart">
+                <figure>
+                    <div id="item1" class="fade-in"></div>
+                    <figcaption id="cap" class="fade-in">Hover over Maarten om een shotje te pakken!</figcaption>
+                </figure>
+            </div>
 
-</footer>
+
+            <h2>Slangenspelletje spelen!</h2>
+            <div id="gameView" class="fade-in contentPart">
+                <canvas onclick="playSnake()" width="400" height="400" id="game"></canvas>
+                <div id="gameInfo">
+                    <h1>Click on the black box to start!</h1>
+
+                    <ul id="controlList">
+                        <li>W naar <b>BOVEN</b></li>
+                        <li>S naar BENEDEN</li>
+                        <li>A naar LINKS</li>
+                        <li>D naar RECHTS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Ode aan Stradale!</h2>
+             <div id="stradale" class="fade-in contentPart">
+                 <p>Stradale, een voorbeeldig man. Niemand weet wie hij is, waar hij woont. Maar wat we zeker weten, is dat hij van elke auto een kunstwerk kan maken.</p>
+                 <p>Met spijt in het hart moet ik u meededelen dat Stradale al een tijdje niet meer actief is, <span id="time-elapsed"></span> om precies te zijn.</p>
+
+                <div id="slideShowDiv">
+                    <img class="slideShow" id="car1" src="../images/robbe/auto1.jpg">
+                    <img class="slideShow hidden" id="car2" src="../images/robbe/auto2.jpg">
+                    <img class="slideShow hidden" id="car3" src="../images/robbe/auto3.jpg">
+                    <img class="slideShow hidden" id="car4" src="../images/robbe/auto4.jpg">
+                    <img class="slideShow hidden" id="car5" src="../images/robbe/auto5.jpg">
+
+                </div>
+
+
+
+             </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
 </div>
 <script src="../assets/js/isIngelogged.js"></script>
 <script src="../assets/javascript/robbe/robbe.js"></script>

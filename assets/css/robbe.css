@@ -69,7 +69,16 @@ header {
 #firstThing {
     width: 165px;
     display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px ;
 
+}
+
+.contentPart{
+
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px ;
 }
 
 #firstThing figcaption{
@@ -113,6 +122,8 @@ header {
 #controlList {
     display: inline-block;
     align-items: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 #gameInfo {
@@ -120,8 +131,8 @@ header {
 }
 
 #gameInfo h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    color: darkseagreen;
 }
 
 .hidden {
@@ -280,6 +291,14 @@ header {
     font-size: 2.3rem;
 }
 
+#Overview > h2{
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+
 #option1{
     background-image: url("../../images/robbe/header.gif");
     width: 250px;
@@ -305,4 +324,19 @@ header {
 .option3{
     background-image: url("../../images/robbe/space.gif");
     width: 150px;
+}
+
+#stradale p {
+    width: 100%;
+}
+
+#slideShowDiv{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 50px;
+}
+
+.show{
+
 }
