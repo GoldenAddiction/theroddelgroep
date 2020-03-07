@@ -130,9 +130,13 @@ a {
     color: transparent;
 }
 
-.robbe{
+.robbe {
     background: url("../../images/robbe/flashy.gif") no-repeat;
     background-size: cover;
+}
+
+.robbe a:hover{
+    color: cornflowerblue;
 }
 
 img {
