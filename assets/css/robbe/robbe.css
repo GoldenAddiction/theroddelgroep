@@ -30,7 +30,7 @@ header {
 }
 
 #poopy {
-    background-image: url("../javascript/robbe/stinky.jpg");
+    background-image: url("../../javascript/robbe/stinky.jpg");
     background-repeat: no-repeat;
     background-position-y: -36px;
     background-position-x: -87px;
@@ -86,7 +86,7 @@ header {
 }
 
 #item1 {
-    background-image: url("../javascript/robbe/theunknown.png");
+    background-image: url("../../javascript/robbe/theunknown.png");
     height: 175px;
     width: 236px;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ header {
 }
 
 #item1:hover {
-    background-image: url("../javascript/robbe/theunknown3.png");
+    background-image: url("../../javascript/robbe/theunknown3.png");
 }
 
 #Overview {
@@ -155,8 +155,8 @@ header {
     margin-top: 50px;
 }
 
-.door {
-    background-image: url(../../images/robbe/deur.png);
+.doorStart {
+    background-image: url(../../../images/robbe/deur.png);
     position: absolute;
     top: 0px;
     background-repeat: no-repeat;
@@ -300,7 +300,7 @@ header {
 
 
 #option1{
-    background-image: url("../../images/robbe/header.gif");
+    background-image: url("../../../images/robbe/header.gif");
     width: 250px;
 }
 
@@ -323,12 +323,12 @@ header {
 
 
 .option2{
-    background-image: url("../../images/robbe/neon.gif");
+    background-image: url("../../../images/robbe/neon.gif");
     width: 150px;
 }
 
 .option3{
-    background-image: url("../../images/robbe/space.gif");
+    background-image: url("../../../images/robbe/space.gif");
     width: 150px;
 }
 
@@ -350,3 +350,5 @@ header {
 .show{
 
 }
+
+
