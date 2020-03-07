@@ -130,6 +130,11 @@ a {
     color: transparent;
 }
 
+.robbe{
+    background: url("../../images/robbe/flashy.gif") no-repeat;
+    background-size: cover;
+}
+
 img {
     width: 400px;
     height: auto;
