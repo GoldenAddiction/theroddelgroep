@@ -1,7 +1,7 @@
 
 body {
     background-color: #333333;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Lato', sans-serif;
     color: white;
 }
 
@@ -21,10 +21,8 @@ header {
 
 #leMonke {
     width: 20%;
-    margin-left: 850px;
+    margin-left: 560px;
 }
-
-
 
 #leMonke > marquee {
     width: 75%;
@@ -39,7 +37,6 @@ header {
     width: 100%;
     height: 70px;
 }
-
 
 #goBack {
     background-image: url(../../../images/robbe/ait.jpg);
@@ -57,11 +54,12 @@ header {
 
 }
 
-#goBack a{
+#goBack a {
     color: white;
     text-decoration: none;
 }
-#goBack a:visited{
+
+#goBack a:visited {
     color: white;
     text-decoration: none;
 
@@ -99,18 +97,18 @@ header {
     width: 165px;
     display: inline-block;
     margin-left: 25px;
-    margin-top: 20px ;
+    margin-top: 20px;
 
 }
 
-.contentPart{
+.contentPart {
 
     display: inline-block;
     margin-left: 25px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
-#firstThing figcaption{
+#firstThing figcaption {
     color: white;
 }
 
@@ -167,7 +165,6 @@ header {
 .hidden {
     display: none;
 }
-
 
 .container {
     margin: 0 auto;
@@ -316,24 +313,22 @@ header {
     }
 }
 
-#Overview > h1{
+#Overview > h1 {
     font-size: 2.3rem;
 }
 
-#Overview > h2{
+#Overview > h2 {
     font-size: 2rem;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
 }
 
-
-
-#option1{
+#option1 {
     background-image: url("../../../images/robbe/header.gif");
     width: 250px;
 }
 
-#activityOverview  a {
+.activityOverview a {
     height: 50px;
     display: inline-block;
     text-align: center;
@@ -343,25 +338,24 @@ header {
     margin-left: 15px;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
-#activityOverview a:visited{
-    color:white;
+.activityOverview a:visited {
+    color: white;
 }
 
-
-
-.option2{
+.option2 {
     background-image: url("../../../images/robbe/neon.gif");
     width: 150px;
 }
 
-.option3{
+.option3 {
     background-image: url("../../../images/robbe/space.gif");
     width: 150px;
 }
 
-.option4{
+.option4 {
     background-image: url("../../../images/robbe/flashy.gif");
     width: 165px;
 }
@@ -370,19 +364,258 @@ header {
     width: 100%;
 }
 
-#slideShowDiv{
+#slideShowDiv {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 30px;
 }
 
-#slideShowDiv img{
+#slideShowDiv img {
     width: 50%;
 }
 
-.show{
+.show {
 
 }
 
+.shadow {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #dfdfdf;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px grey,
+    -2px 5px 1px  darkgrey,
+    -4px 8px 0px black;
+}
 
+.shadowBack{
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #FF0000;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px #FF0000,
+    -2px 5px 0 #FF7F00,
+    -4px 10px 0 #FFFF00,
+    -8px 15px 0 #00FF00,
+    -12px 20px 0 #0000FF,
+    -16px 25px 0 #4B0082,
+    -20px 30px 0 #9400D3;
+}
+
+
+#listenWithMe{
+    margin-bottom: 30px;
+}
+
+.neon {
+    border-radius: 8px;
+    border: 3px solid rgb(0, 40, 70);
+    cursor: pointer;
+}
+
+.neon:hover {
+    animation: border-flicker 2s linear forwards;
+}
+
+
+.neon:hover span {
+    animation: text-flicker 2s linear forwards;
+}
+
+.neon:hover .first {
+    animation: letter-flicker 3s linear infinite;
+}
+
+@keyframes text-flicker {
+    2% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    3% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    6% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    9% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    11% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    14% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    18% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    32% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    33% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    37% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    39% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    43% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    46% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    47% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    100% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+}
+
+@keyframes letter-flicker {
+    2% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    3% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    6% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    9% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    11% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    14% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    18% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    32% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px#2E64FE;
+    }
+    33% {
+        color:rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    37% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    39% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    40% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    100% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+}
+
+@keyframes border-flicker {
+    2% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    3% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    5% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    6% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    7% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    9% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    13% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    16% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    18% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    22% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    34% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    36% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    54% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    100% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+}
+
+.neon span{
+    font-weight: 300;
+    margin: 15px 0 0;
+    color: white;
+}
