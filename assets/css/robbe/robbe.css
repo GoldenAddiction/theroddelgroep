@@ -1,0 +1,621 @@
+
+body {
+    background-color: #333333;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+header {
+
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    display: flex;
+
+}
+
+#begroeting {
+    font-size: 2.5rem;
+}
+
+#leMonke {
+    width: 20%;
+    margin-left: 560px;
+}
+
+#leMonke > marquee {
+    width: 75%;
+
+}
+
+#poopy {
+    background-image: url("../../javascript/robbe/stinky.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -36px;
+    background-position-x: -87px;
+    width: 100%;
+    height: 70px;
+}
+
+#goBack {
+    background-image: url(../../../images/robbe/ait.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    width: 16%;
+    background-position-x: -30px;
+    background-position-y: -55px;
+    height: 70px;
+    margin-left: 50px;
+    align-content: center;
+    text-align: center;
+    line-height: 3.2;
+    font-size: 1.4rem;
+
+}
+
+#goBack a {
+    color: white;
+    text-decoration: none;
+}
+
+#goBack a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+#container div {
+
+    border: 2px solid white;
+
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#container .div1 {
+    width: 120px;
+    height: 120px;
+}
+
+#container .div2 {
+    width: 100px;
+    height: 150px;
+}
+
+#container .div3 {
+    width: 160px;
+    height: 90px;
+}
+
+#container .div4 {
+    width: 130px;
+    height: 130px;
+}
+
+#firstThing {
+    width: 165px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+
+}
+
+.contentPart {
+
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#firstThing figcaption {
+    color: white;
+}
+
+#item1 {
+    background-image: url("../../javascript/robbe/theunknown.png");
+    height: 175px;
+    width: 236px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+}
+
+#cap {
+    padding: 5px;
+}
+
+#item1:hover {
+    background-image: url("../../javascript/robbe/theunknown3.png");
+}
+
+#Overview {
+    width: 1300px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#game {
+    background-color: black;
+    display: inline-block;
+}
+
+#gameView {
+    display: inline-block;
+}
+
+#controlList {
+    display: inline-block;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#gameInfo {
+    display: inline-block;
+}
+
+#gameInfo h1 {
+    font-size: 1rem;
+    color: darkseagreen;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.backDoor {
+    background-color: #333;
+    position: relative;
+    width: 240px;
+    height: 500px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.doorStart {
+    background-image: url(../../../images/robbe/deur.png);
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    left: 0px;
+    width: 300px;
+    height: 500px;
+    transform-origin: left;
+    transition: all 2.5s ease-in-out;
+
+}
+
+.doorOpen {
+    /*prespectiv creates the door open effect*/
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+#inkom {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#Overview > h1 {
+    font-size: 2.3rem;
+}
+
+#Overview > h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#option1 {
+    background-image: url("../../../images/robbe/header.gif");
+    width: 250px;
+}
+
+.activityOverview a {
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    line-height: 50px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.activityOverview a:visited {
+    color: white;
+}
+
+.option2 {
+    background-image: url("../../../images/robbe/neon.gif");
+    width: 150px;
+}
+
+.option3 {
+    background-image: url("../../../images/robbe/space.gif");
+    width: 150px;
+}
+
+.option4 {
+    background-image: url("../../../images/robbe/flashy.gif");
+    width: 165px;
+}
+
+#stradale p {
+    width: 100%;
+}
+
+#slideShowDiv {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 30px;
+}
+
+#slideShowDiv img {
+    width: 50%;
+}
+
+.show {
+
+}
+
+.shadow {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #dfdfdf;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px grey,
+    -2px 5px 1px  darkgrey,
+    -4px 8px 0px black;
+}
+
+.shadowBack{
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #FF0000;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px #FF0000,
+    -2px 5px 0 #FF7F00,
+    -4px 10px 0 #FFFF00,
+    -8px 15px 0 #00FF00,
+    -12px 20px 0 #0000FF,
+    -16px 25px 0 #4B0082,
+    -20px 30px 0 #9400D3;
+}
+
+
+#listenWithMe{
+    margin-bottom: 30px;
+}
+
+.neon {
+    border-radius: 8px;
+    border: 3px solid rgb(0, 40, 70);
+    cursor: pointer;
+}
+
+.neon:hover {
+    animation: border-flicker 2s linear forwards;
+}
+
+
+.neon:hover span {
+    animation: text-flicker 2s linear forwards;
+}
+
+.neon:hover .first {
+    animation: letter-flicker 3s linear infinite;
+}
+
+@keyframes text-flicker {
+    2% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    3% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    6% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    9% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    11% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    14% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    18% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    32% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    33% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    37% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    39% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    43% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    46% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    47% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    100% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+}
+
+@keyframes letter-flicker {
+    2% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    3% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    6% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    9% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    11% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    14% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    18% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    32% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px#2E64FE;
+    }
+    33% {
+        color:rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    37% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    39% {
+        color: rgba(0, 40, 70, 0.5);
+        text-shadow: none;
+    }
+    40% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+    100% {
+        color: #2E64FE;
+        text-shadow: 0 0 15px #2E64FE;
+    }
+}
+
+@keyframes border-flicker {
+    2% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    3% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    5% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    6% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    7% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    9% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    13% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    16% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    18% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    22% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    34% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    36% {
+        border: 3px solid rgb(0, 40, 70);
+        box-shadow: none;
+    }
+    54% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    100% {
+        border: 3px solid rgb(0, 180, 230);
+        box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+        0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+}
+
+.neon span{
+    font-weight: 300;
+    margin: 15px 0 0;
+    color: white;
+}

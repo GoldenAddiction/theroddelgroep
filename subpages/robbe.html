@@ -4,65 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/robbe.css">
+    <link rel="stylesheet" href="../assets/css/robbe/robbe.css">
+    <link rel="stylesheet" href="../assets/css/robbe/mazer.css">
+    <link rel="stylesheet" href="../assets/css/robbe/layout.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Robbe's pagina</title>
 
 
 </head>
 <body>
-<header>
-    <div id="begroeting">
-        <h1>Hallo en welkom bij mijn pagina!</h1>
-        <h2>Op deze pagina kan je allerlei lollige dingen verwachten!</h2>
-    </div>
-
-    <div id="leMonke">
-        <h3 id="poopy" onclick="startSound()"></h3>
-        <marquee>Click me!</marquee>
-    </div>
 
 
-</header>
-<main>
-<div id="container">
-
-</div>
-
-<div id="Overview">
-    <div id="firstThing">
-        <figure  >
-            <div id="item1"></div>
-            <figcaption id="cap">Hover over Maarten om een shotje te pakken!</figcaption>
-        </figure>
-
+<div id="inkom">
+    <div id="backDoor" class="backDoor">
+        <div id="frontDoor" class="doorStart">
         </div>
+    </div>
 </div>
+<div id="content" class="hidden">
 
-    <div id="gameView">
-        <canvas onclick="playSnake()" width="400" height="400" id="game"></canvas>
-        <div id="gameInfo">
-            <h1>Click on the black box to start!</h1>
 
-            <ul id="controlList">
-                <li>W naar <b>BOVEN</b></li>
-                <li>S naar BENEDEN</li>
-                <li>A naar LINKS</li>
-                <li>D naar RECHTS</li>
-            </ul>
+    <header>
+
+        <div id="goBack">
+            <a href="../index.html">AIT KZIN DEURE</a>
         </div>
 
-    </div>
+
+        <div class="sign">
+            <span>Robb<span class="flicker">e</span></span>
+        </div>
+
+        <div id="leMonke" class="fade-in">
+            <h3 id="poopy" onclick="startSoundLeMonke()"></h3>
+            <marquee>Click me!</marquee>
+        </div>
+
+
+    </header>
+    <main>
+        <div id="container">
+
+        </div>
+
+
+        <div id="Overview" class="fade-in ">
+
+            <h1 class="shadowBack">Wie ben ik?</h1>
+            <div class="activityOverview">
+                <a class="neon" href="#manBehind"><span>The man behind the site</span></a>
+                <a class="neon" href="#listenWithMe"><span>Luister mee met mij</span></a>
+            </div>
 
 
 
-</main>
-<footer>
+            <h2  class="shadow" id="manBehind">The man behind the site!</h2>
+            <div class="contentPart">
+                <p>Hallo iedereen! Mijn naam is Robbe. Ik ben 19 jaar en woon in Moorslede.</p>
+                <p>Ik leer informatica dingen in Brugge.</p>
+                <p>Ik eet graag. Ik kijk ook graag series enal. Tegen films zeg ik ook zeker geen nee, integendeel.</p>
+                <br>
+                <p></p>
+            </div>
 
-</footer>
+
+            <h2 class="shadow" id="listenWithMe">Luister naar mijn favoriete liedjes!</h2>
+            <div class="contentPart">
+                <iframe src="https://open.spotify.com/embed/playlist/7MgD1T2Evmjf1QXEwdDNzh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+
+
+            <h1 class="shadowBack">Check ook deze shit:</h1>
+            <div class="activityOverview">
+                <a class="neon" href="#firstThing"><span>Eentje drinken met Maarten</span></a>
+                <a class="neon" href="#gameView"><span>Slangenspel spelen</span></a>
+                <a class="neon" href="#slideShowDiv"><span>Ode aan Stradale</span></a>
+                <a class="neon" href="#florianMaz"><span>Op tijd met Florian</span></a>
+            </div>
+
+
+            <h2 class="shadow">Eentje drinken met de Maarten!</h2>
+            <div id="firstThing" class="fade-in contentPart">
+                <figure>
+                    <div id="item1" class="fade-in"></div>
+                    <figcaption id="cap" class="fade-in">Hover over Maarten om een shotje te pakken!</figcaption>
+                </figure>
+            </div>
+
+
+            <h2 class="shadow">Slangenspelletje spelen!</h2>
+            <div id="gameView" class="fade-in contentPart">
+                <canvas onclick="playSnake()" width="400" height="400" id="game"></canvas>
+                <div id="gameInfo">
+                    <h1>Click on the black box to start!</h1>
+
+                    <ul id="controlList">
+                        <li>W naar <b>BOVEN</b></li>
+                        <li>S naar BENEDEN</li>
+                        <li>A naar LINKS</li>
+                        <li>D naar RECHTS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="shadow">Ode aan Stradale!</h2>
+            <div id="stradale" class="fade-in contentPart">
+                <p>Stradale, een voorbeeldig man. Niemand weet wie hij is, waar hij woont. Maar wat we zeker weten, is
+                    dat hij van elke auto een kunstwerk kan maken.</p>
+                <p>Hoe weet ik dat het een 'hij' is? Ik heb hem ooit eens gespot op één van zijn foto's. Het was nog in
+                    zijn vroege periode en hij had een amateursfout gemaakt.</p>
+                <p>Ik zag volop zijn gelaat. </p>
+                <p>Met spijt in het hart moet ik u meededelen dat Stradale al een tijdje niet meer actief is, <span
+                        id="time-elapsed"></span> om precies te zijn.</p>
+                <p>Om deze legendarische spotter te eren heb ik hier mijn favoriete spots toegevoegd!</p>
+
+
+                <div id="slideShowDiv">
+                    <img class="slideShow" id="car1" src="../images/robbe/auto1.jpg">
+                    <img class="slideShow hidden" id="car2" src="../images/robbe/auto2.jpg">
+                    <img class="slideShow hidden" id="car3" src="../images/robbe/auto3.jpg">
+                    <img class="slideShow hidden" id="car4" src="../images/robbe/auto4.jpg">
+                    <img class="slideShow hidden" id="car5" src="../images/robbe/auto5.jpg">
+                </div>
+            </div>
+
+            <h2 class="shadow">Op tijd komen met Florian!</h2>
+            <div id="florianMaz" class="fade-in contentPart">
+                <h3>Neem de sleutel en ga vlug naar de ingangsdeur van de klas!</h3>
+
+
+                <div id="maze_container" class="fade-in" >
+                    <div id="maze" data-steps="188" class="">
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door exit"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="door"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=" wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div class="key"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class=""></div><div class=""></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class=""></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class=""></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div class=""></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class=""></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class=""></div><div class="door"></div><div class=""></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class=""></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div class=""></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div class=""></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class=""></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class=""></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div class=""></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door entrance"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
 <script src="../assets/js/isIngelogged.js"></script>
 <script src="../assets/javascript/robbe/robbe.js"></script>
 <script src="../assets/javascript/robbe/magischeBazar.js"></script>
-<script src="../assets/javascript/robbe/horinge.js"></script>
 <script src="../assets/javascript/robbe/rawrxd.js"></script>
+<script src="../assets/javascript/robbe/horinge.js"></script>
+<script src="../assets/javascript/robbe/maze.js"></script>
 </body>
 </html>

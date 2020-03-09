@@ -25,6 +25,20 @@ h1{
     width: 50vw;
     margin: 25vh 25vw;
     background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ww label, #ww input{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#ww label{
+    width: auto;
+}
+#ww input{
+    width: 200px;
 }
 #ingelogdbluven h2{
     cursor: pointer;
@@ -81,9 +95,6 @@ li.person {
 
     border-radius: 25px;
     padding: 20px;
-
-
-
 }
 
 li.person:hover {
@@ -102,8 +113,32 @@ a {
     color: whitesmoke;
 
 }
+.florian{
+    background: url("../../images/FlOrIaN/NYAN.png") no-repeat;
+    background-size: cover;
+}
+.florian:hover, .florian a:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
 
+}
+.florian a:hover{
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+}
+.florian a{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
+.robbe {
+    background: url("../../images/robbe/flashy.gif") no-repeat;
+    background-size: cover;
+}
+
+.robbe a:hover{
+    color: cornflowerblue;
+
+}
 
 img {
     width: 400px;

@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/stef/stef.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="exit"><a href="../index.html">Get me out of here</a></div>
+    <div id="exit-mobile"><a href="../index.html">X</a></div>
+    <div class="header" id="myHeader">
+        <nav><ul>
+            <li><a href="stef.html">Home</a></li>
+            <li><a href="#">Me</a></li>
+            <li><a href="#">Fun stuff</a></li>
+        </ul></nav>
+      </div>
+      
+    <div class="slides" id="screen1"><h1 id="s1">Hallo hallo, welkom welkom op Stefs pagina</h1></div>
+    <div class="slides" id="screen2"><h1 id="s2">Prepare yourselves for an epic journey...</h1></div>
+    <div class="slides" id="screen3"><h1 id="s3">Ready?</h1></div>
+    <div class="slides" id="screen4"><h1 id="s4">To be continued! Kom zeker later eens terug ♥♥♥</h1></div>
 </body>
 <script src="../assets/js/isIngelogged.js"></script>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 </html>
