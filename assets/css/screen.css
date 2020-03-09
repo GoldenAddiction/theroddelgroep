@@ -69,19 +69,22 @@ h1{
 
 nav {
     min-width: 70vw;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
 ul.persons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    align-items: center;
 
 }
 li.person {
