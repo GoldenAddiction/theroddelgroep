@@ -131,3 +131,52 @@
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
+#blog{
+    background-color: lightgrey;
+    color: black;
+    font-family: "Handlee", cursive;
+    padding-left: 90px;
+    padding-right: 80px;
+}
+
+#blog h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#blogIntro{
+    margin-bottom: 15px;
+}
+
+#blog .uur{
+    font-weight: bold;
+    color: #c7923c;
+    margin-right: 5px;
+
+}
+
+#blog h4{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#blog .boodschap{
+    margin: 30px;
+}
+
+#blog p{
+    font-size: 1.1rem;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+#parisButton{
+    background-image: url("../../javascript/robbe/parijs.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90px;
+    border-radius: 5px;
+}
