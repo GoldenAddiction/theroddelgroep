@@ -77,7 +77,7 @@ function transformComments(data){
 
     for (let i=data.length-1; i>=0; i--){
 
-        lst += `<li class="message">${data[i].naam}: ${data[i].reactie}</li>`
+        lst += `<li class="message"><span id="commentor">${data[i].naam}</span><span id="comment">${data[i].reactie}</span></li>`
 
 
     }

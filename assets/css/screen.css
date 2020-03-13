@@ -5,9 +5,10 @@ header{
 }
 
 body {
-    background-color: rgb(181, 178, 176);
     font-family: 'Comic Sans', sans-serif;
     font-weight: bold;
+    background: url("../../images/ranger-4df6c1b6.png");
+    background-size: cover;
 }
 h1{
     font-size:20rem;
@@ -152,11 +153,48 @@ img {
 }
 
 .message {
-    color: black;
+
     font-size: 1rem;
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: rgba(182, 194, 189, 0.8);
+    border-radius: 5px;
+
+
 }
 
+.message span {
+    width: 200px;
+    text-align: center;
+}
+
+.message span#commentor {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right: white solid 2px;
+    text-align: center;
+
+}
+
+.message span#comment {
+    word-break: break-word;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+#comments #list {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
 h3 {
     text-decoration: underline;
     margin-bottom: 10px;
@@ -166,8 +204,44 @@ h3 span {
     font-size: 0.5rem;
 }
 #comments {
-    margin-left: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 input {
     margin-right: 25px;
+}
+
+form#commenting {
+
+    text-align: center;
+}
+
+form#commenting label {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form#commenting input[type=text] {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form#commenting input[type=submit] {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
