@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded",init);
 
 function init(){
     //loadInDivs();
-
+    setInterval(function(){changeOceanManLyrics()}, 3000);
 }
-
 
 function loadInDivs(){
     let cont = document.querySelector("#container");
@@ -29,6 +28,16 @@ function loadInDivs(){
 
     }
 
-
     cont.innerHTML = html;
+}
+
+let lyricCount = 0;
+function changeOceanManLyrics() {
+    let p = document.querySelector("#oceanMan");
+    if (lyricCount >= oceanManlyrics.length){
+        lyricCount = 0;
+    }
+    console.log(lyricCount);
+    p.innerText = oceanManlyrics[lyricCount];
+    lyricCount = lyricCount + 1;
 }

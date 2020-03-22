@@ -274,3 +274,22 @@ body {
     display: block;
     margin-left: 15px;
 }
+
+#karaokeScreen{
+    background-image: url("../../javascript/robbe/oceanMan.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 85px;
+    margin-left: 30px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 40px;
+    background-blend-mode: screen;
+}
+
+#oceanMan{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
