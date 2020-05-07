@@ -180,3 +180,15 @@
     width: 90px;
     border-radius: 5px;
 }
+.minionButton{
+    background-image: url("../../javascript/robbe/minions_PNG6.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 110px;
+    border-radius: 5px;
+    color : grey;
+}
+#minionLink{
+    color: #ffff67;
+}

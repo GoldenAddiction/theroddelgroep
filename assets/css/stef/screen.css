@@ -1,0 +1,142 @@
+body {
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1;
+    overflow: hidden;
+
+}
+
+
+#menu {
+    color: rgba(8, 8, 8, 0.8); 
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#menu h1 {
+    
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#menu ul {
+    margin-top: 50px;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color:rgb(250, 191, 27);
+}
+
+#scoreboard {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+
+}
+
+#scoreboard ul {
+    margin-top: 50px;
+}
+
+#scoreboard li {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color:rgb(250, 191, 27);
+    width: 200px;
+}
+
+#wrapper {
+
+    display: flex;
+    align-items: center;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(250, 191, 27);
+    height: 100vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+
+
+#board {
+    align-self: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.field {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(8, 8, 8, 0.8);
+}
+
+.field div {
+    line-height: 180px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(250, 191, 27);
+}
+
+.hidden {
+    display: none;
+}
+
+.guessed {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    height: 180px;
+    width: 180px;
+    background-color: yellowgreen !important;
+}
+
+.guessed div, .black div {
+    line-height: 180px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#counter {
+    text-align: center;
+}
+
+#resultscreen {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    height: 200px;
+}
+
+.black {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    height: 180px;
+    width: 180px;
+    background-color: black !important;
+}
